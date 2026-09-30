@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ Fernandez | Electrical Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        engrey: {
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            600: '#475569',
+                            800: '#1e293b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-engrey-100 text-engrey-800 antialiased selection:bg-blue-500 selection:text-white">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200 shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-bold text-xl tracking-tight text-navy-900">
+                        EJ<span class="text-blue-600">Fernandez</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-engrey-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#skills" class="text-sm font-medium text-engrey-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-sm font-medium text-engrey-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#contact" class="text-sm font-medium text-engrey-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-engrey-600 hover:text-navy-900 focus:outline-none p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-engrey-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">About</a>
+                <a href="#skills" class="block px-3 py-2 text-base font-medium text-engrey-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-base font-medium text-engrey-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-engrey-600 hover:text-blue-600 hover:bg-gray-50 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-navy-900 text-white relative overflow-hidden">
+        <!-- Abstract background elements for engineering feel -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-blue-400 font-medium tracking-wide text-sm md:text-base uppercase mb-3">Electrical Engineering Student</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Hi, I'm <span class="gradient-text">EJ Fernandez</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 font-light mb-4">
+                    Studying at the <span class="text-white font-medium">University of Central Florida</span>.
+                </p>
+                <p class="text-lg text-gray-400 mb-10 leading-relaxed max-w-2xl">
+                    I am actively seeking building systems electrical engineering co-ops and internships starting in <strong class="text-white font-medium">May 2027</strong>. Passionate about applying analytical skills and theoretical knowledge to real-world infrastructure and power systems.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#projects" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-navy-900 bg-white hover:bg-gray-100 transition-colors shadow-lg">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 border border-gray-400 text-base font-medium rounded-lg text-white hover:border-white hover:bg-white/5 transition-colors">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy-900 mb-4">Technical Skills</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-engrey-600 max-w-2xl mx-auto">A comprehensive toolkit acquired through rigorous coursework and hands-on laboratory experience.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill items -->
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-microchip text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">LTspice</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-code text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">C Programming</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-square-root-variable text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">MATLAB</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-memory text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">Verilog</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-server text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">ARMv7 Assembly</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-layer-group text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">Xilinx Vivado</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-drafting-compass text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">AutoCAD</span>
+                </div>
+                <div class="p-6 bg-engrey-100 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-shadow border border-gray-100">
+                    <i class="fas fa-fire-burner text-3xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-navy-900">Soldering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-engrey-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-navy-900 mb-4">Featured Projects</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 group">
+                    <div class="h-48 bg-navy-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://placehold.co/800x400/1e293b/334155?text=Circuit+Schematic')] bg-cover bg-center mix-blend-overlay"></div>
+                        <i class="fas fa-wave-square text-6xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-navy-900">RC Timing Delay Circuit</h3>
+                        </div>
+                        <p class="text-engrey-600 mb-6 leading-relaxed">
+                            Engineered a precision timing delay circuit utilizing an operational amplifier configured as a comparator. The system was designed to trigger exactly at a 17-second threshold based on an RC time constant.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start text-sm text-engrey-600">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Designed and rigorously simulated the circuit topology in <strong>LTspice</strong> prior to physical implementation.</span>
+                            </li>
+                            <li class="flex items-start text-sm text-engrey-600">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Successfully breadboarded the physical circuit, verifying the 17-second delay threshold through hardware testing.</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">LTspice</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">Circuit Design</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">Hardware Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 group">
+                    <div class="h-48 bg-navy-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 opacity-20 bg-[url('https://placehold.co/800x400/1e293b/334155?text=AutoCAD+Model')] bg-cover bg-center mix-blend-overlay"></div>
+                        <i class="fas fa-ship text-6xl text-blue-400 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-navy-900">Submarine Propulsion Model</h3>
+                        </div>
+                        <p class="text-engrey-600 mb-6 leading-relaxed">
+                            Developed and constructed a functional scale model of a submarine propulsion system, integrating structural drafting with practical electrical assembly techniques.
+                        </p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-start text-sm text-engrey-600">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Utilized <strong>AutoCAD</strong> to draft precise schematics and structural layouts for the model's physical and electrical housing.</span>
+                            </li>
+                            <li class="flex items-start text-sm text-engrey-600">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Expertly soldered electrical components and motors, ensuring robust power delivery to the propulsion mechanism.</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">AutoCAD</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">Soldering</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">Electromechanics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy-900 rounded-3xl p-8 md:p-12 shadow-xl text-center text-white relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-blue-600 opacity-20 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-64 h-64 rounded-full bg-blue-400 opacity-20 blur-3xl"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+                    <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+                        I am currently looking for building systems electrical engineering opportunities for Summer 2027. Whether you have an open role or just want to say hi, I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+                        <a href="mailto:ej.fernandez@example.com" class="flex items-center text-gray-300 hover:text-white transition-colors group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-600 transition-colors">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <span class="text-lg font-medium">ej.fernandez@ucf.edu</span>
+                        </a>
+                        
+                        <a href="#" class="flex items-center text-gray-300 hover:text-white transition-colors group">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-blue-600 transition-colors">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </div>
+                            <span class="text-lg font-medium">LinkedIn Profile</span>
+                        </a>
+                    </div>
+                    
+                    <button class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-blue-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                        Send a Message
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-engrey-100 py-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            <a href="#" class="font-bold text-xl tracking-tight text-navy-900 mb-4 opacity-50 hover:opacity-100 transition-opacity">
+                EJ<span class="text-blue-600">Fernandez</span>
+            </a>
+            <p class="text-engrey-600 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> EJ Fernandez. Designed for University of Central Florida Engineering.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
